@@ -13,4 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
         firstDay: 1
     });
     var tooltipInstances = M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+    var scrollspyInstances = M.ScrollSpy.init(document.querySelectorAll('.scrollspy'));
   });
