@@ -12,43 +12,28 @@
 <body>
     
     <div class="container">
-        <h2>Collections</h2>
-        <ul class="collection with-header">
-            <li class="collection-header"><h4>Customers</h4></li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Ryu</span>
-                <p class="grey-text">black-belt</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Yoshi</span>
-                <p class="grey-text">black-belt</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <i class="material-icons circle blue">person</i>
-                <span class="title">Cristal</span>
-                <p class="grey-text">black-belt</p>
-                <a href="#" class="secondary-content">
-                    <i class="material-icons blue-text">email</i>
-                </a>
-            </li>
-            <li class="collection-item">Mario</li>
-            <li class="collection-item">Luigi</li>
-            <li class="collection-item">Bowser</li>
-        </ul>
+        <h2>Modals</h2>
+        
+        <a class="btn orange modal-trigger" href="#terms">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn orange">Agree & close</a>
+            </div>
+        </div>
         
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
         
     </script>
 </body>
