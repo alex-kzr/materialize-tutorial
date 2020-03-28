@@ -12,4 +12,5 @@ document.addEventListener('DOMContentLoaded', function() {
         disableWeekends: true,
         firstDay: 1
     });
+    var tooltipInstances = M.Tooltip.init(document.querySelectorAll('.tooltipped'));
   });
