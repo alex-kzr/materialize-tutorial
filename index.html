@@ -14,30 +14,37 @@
 </head>
 <body>
     
-    <div class="container">
-        <h4>Shadow & Depth</h4>
-        <div class="row">
-            <div class="col s2">
-              <div></div>
-            </div>
-            <div class="col s2">
-              <div class="z-depth-1"></div>
-            </div>
-            <div class="col s2">
-              <div class="z-depth-2"></div>
-            </div>
-            <div class="col s2">
-              <div class="z-depth-3"></div>
-            </div>
-            <div class="col s2">
-              <div class="z-depth-4"></div>
-            </div>
-            <div class="col s2">
-              <div class="z-depth-5"></div>
-            </div>
+    <nav class="nav-wrapper indigo">
+        <div class="container">
+            <a class="brand-logo" href="#">Site Title</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sidenavElement = document.querySelector('.sidenav');
+            var instances = M.Sidenav.init(sidenavElement);
+        });
+        
+    </script>
 </body>
 </html>
