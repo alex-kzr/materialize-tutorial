@@ -7,4 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var parallaxInstances = M.Parallax.init(parallaxElems);
     var tabsElems = document.querySelectorAll('.tabs');
     var tabsInstanses = M.Tabs.init(tabsElems);
+    var datepickerElems = document.querySelectorAll('.datepicker');
+    var datepickerInstances = M.Datepicker.init(datepickerElems, {
+        disableWeekends: true,
+        firstDay: 1
+    });
   });
